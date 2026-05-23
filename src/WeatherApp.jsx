@@ -7,9 +7,9 @@ function WeatherApp() {
   const [weather, setWeather] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [unit, setUnit] = useState("metric"); // metric = °C, imperial = °F
+  const [unit, setUnit] = useState("metric"); 
 
-  const API_KEY = "c19712e9f07fdfcfa189baa61f631878"; // replace with your key
+  const API_KEY = "c19712e9f07fdfcfa189baa61f631878"; 
 
   const fetchWeather = async () => {
     if (!city) return;
